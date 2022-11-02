@@ -36,5 +36,6 @@ db = ExplainerDashboard(explainer,
                         title="Titanic Explainer", # defaults to "Model Explainer"
                         shap_interaction=False, # you can switch off tabs with bools
                         )
-db.run(host = "0.0.0.0")
+db.flask_server()
+
 
